@@ -51,7 +51,11 @@ class ConverterSpec extends ObjectBehavior
     }
 
     public function it_should_return_XXX() {
-    	$this->getRoman(30)->shouldBe("XXX");
+        $this->getRoman(30)->shouldBe("XXX");
+    }
+
+    public function it_should_return_CMXXVII() {
+        $this->getRoman(927)->shouldBe("CMXXVII");
     }
 
     public function it_should_return_C() {
