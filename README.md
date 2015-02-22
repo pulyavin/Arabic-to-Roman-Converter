@@ -1,2 +1,1 @@
-# Arabic-to-Roman-Converter
-Arabic to Roman Converter
+Есть же боле гумманный способ, нежели создавать целую репу ;)
