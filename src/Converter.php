@@ -1,5 +1,5 @@
 <?php
-class Markdown {
+class Converter {
 	public static function getRoman($arabic) {
 		if ($arabic > 3999) {
 			return false;

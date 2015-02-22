@@ -5,7 +5,7 @@ namespace spec;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class MarkdownSpec extends ObjectBehavior
+class ConverterSpec extends ObjectBehavior
 {
 
     public function it_should_return_false_when_over_3999() {
