@@ -21,7 +21,7 @@ class Converter {
 		for ($i = 0, $count = strlen($arabic); $i < $count; $i++) {
 			$letter = (integer) substr($arabic, -(1 + $i), 1);
 
-			// [0, 3]
+			// (0, 3]
 			if ($letter <= 3) {
 				$plus = str_repeat($prepare[$i][0], $letter);
 			}
