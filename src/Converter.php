@@ -25,11 +25,11 @@ class Converter {
 			if ($letter <= 3) {
 				$plus = str_repeat($prepare[$i][0], $letter);
 			}
-			// [4, 5]
+			// [4, 5)
 			else if ($letter < 5) {
 				$plus = str_repeat($prepare[$i][0], 5 - $letter) . $prepare[$i][1];
 			}
-			// [6, 8]
+			// [5, 8]
 			else if ($letter <= 8) {
 				$plus = $prepare[$i][1] . str_repeat($prepare[$i][0], $letter - 5);
 			}
