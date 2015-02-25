@@ -7,6 +7,11 @@ use Prophecy\Argument;
 
 class ConverterSpec extends ObjectBehavior
 {
+    public function it_should_return_false_when_less_0() {
+        $rand = -rand(0, 100000);
+
+        $this->getRoman($rand)->shouldBe(false);
+    }
 
     public function it_should_return_false_when_over_3999() {
     	$rand = rand(3999, 100000);

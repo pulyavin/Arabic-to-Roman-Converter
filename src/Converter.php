@@ -1,7 +1,7 @@
 <?php
 class Converter {
 	public static function getRoman($arabic) {
-		if ($arabic > 3999) {
+		if ($arabic > 3999 || $arabic < 1) {
 			return false;
 		}
 
@@ -18,7 +18,6 @@ class Converter {
 
 		$roman = null;
 
-		$arabic = (string) $arabic;
 		for ($i = 0, $count = strlen($arabic); $i < $count; $i++) {
 			$letter = (integer) substr($arabic, -(1 + $i), 1);
 
