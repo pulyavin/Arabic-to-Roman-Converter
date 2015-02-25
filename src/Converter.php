@@ -2,7 +2,7 @@
 class Converter {
 	public static function getRoman($arabic) {
 		if ($arabic > 3999 || $arabic < 1) {
-			return false;
+			return null;
 		}
 
 		$prepare = [
